@@ -1,0 +1,82 @@
+ARQUITETURA CLIENTE-SERVIDOR
+
+Definição:
+  Nessa arquitetura o processamento da informação é dividido em módulos ou processos distintos. 
+  Existe um processo que é responsável pela manutenção da informação (servidores) e outro responsável pela obtenção dos dados (os clientes).
+  
+Papéis:
+  Cliente:
+    Solicitam um determinado serviço, através do envio de uma mensagem ao servidor. 
+    Enquanto o processo servidor está trabalhando a solicitação, o cliente está livre para realizar outras tarefas.
+    Um cliente não compartilha qualquer de seus recursos, mas solicita um conteúdo ou função do servidor.
+  
+  Características do Cliente:
+    Inicia pedidos para servidores;
+    Espera por respostas;
+    Recebe respostas;
+    Conecta-se a um pequeno número de servidores de uma só vez ;
+    Normalmente interage diretamente com os servidores através de seu software aplicação especifico, que lhe possibilita a comunicação com o servidor;
+    Utiliza recursos da rede .
+  
+  Servidor:
+    Oferecem serviços a processos usuários, ou seja, executam a tarefa solicitada 
+    e enviam uma resposta ao cliente que se traduz nos dados solicitados.
+    Um servidor é um host que está executando um ou mais serviços ou programas que compartilham recursos com os clientes.
+    
+    Características do Servidor:
+    Sempre espera por um pedido de um cliente;
+    Atende os pedidos e, em seguida, responde aos clientes com os dados solicitados;
+    Podem se conectar com outros servidores para atender uma solicitação específica do cliente; jamais podem se comunicar.
+    Fornece recursos de rede.
+    Normalmente interage diretamente com os usuários finais através de qualquer interface com o usuário;
+    Estrutura o sistema.
+  
+ Exemplo de Arquitetura cliente-servidor:
+  Comunicação entre o browser e um site que possui um servidor para processamentos de banco de dados ou outros relacionados.
+  Funcionalidades como a troca de e-mail, acesso à internet ou acesso a um banco de dados, são construídos com base no modelo cliente-servidor. 
+  Por exemplo, um navegador web é um programa cliente, em execução no computador do usuário, que acede às informações armazenadas num servidor web na internet.
+ 
+ SISTEMA OPERACIONAL PARA SERVIDORES
+ 
+  CentOS
+  Debian
+  Ubuntu
+  Red Hat Enterprise Linux
+  Unix
+  Solaris
+  FreeBSD
+  Windows Server 2019
+  
+  * O Linux é indicado para servidores web por muitos especialistas na área de informática e isso tem bons motivos.
+      Ele oferece melhor desempenho para o PHP, que é atualmente a linguagem de programação mais popular da web.
+      
+  * O Linux não ser apenas um sistema operacional.
+      Ele é um kernel (parte mais importante de um sistema operacional), ou seja, ele possui seu código-fonte aberto (disponível para melhorias).
+ 
+ PRINCIPAIS SERVIÇOS
+ 
+  Serviço de E-mail:
+  É um serviço de hospedagem de e-mail no qual eles são armazenados. 
+  Protocolos de e-mails são, basicamente, as regras que organizam 
+  e regem a sincronização da comunicação entre dois sistemas computacionais.
+  * O protocolo de um e-mail controla e possibilita a transferência de dados entre o destinatário e o remetente.
+    Sem o protocolo, não há como um e-mail ser enviado de uma pessoa para a outra.
+    - SMTP
+    - POP
+    - IMAP
+    
+    SMTP
+    É usado quando o e-mail é entregue a partir de um cliente de e-mail a um servidor ou quando o e-mail é entregue a partir de um servidor de email para o outro. 
+    Ou seja, é um envio de forma mais direta de um e-mail para o outro.
+  
+    POP
+    Faz o download das mensagens no seu servidor e as salva localmente em sua máquina, sem ter a necessidade de deixar
+    uma cópia no servidor (há, porém, opções para que isso aconteça). 
+    Assim, este protocolo tem acesso apenas à caixa de entrada, sem conseguir baixar qualquer outra pasta da conta.
+    
+    IMAP
+    Tem acesso a todas as pastas de uma conta, por isso, deixa o status dos e-mails igual tanto no servidor como no
+    software, realizando assim a sincronia das mensagens. Isso permite com que exista uma conexão para que alterações e
+    novos e-mails sejam atualizados em tempo real.
+    
+    
