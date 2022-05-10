@@ -1,4 +1,4 @@
-ARQUITETURA CLIENTE-SERVIDOR
+1. ARQUITETURA CLIENTE-SERVIDOR
 
 Definição:
   Nessa arquitetura o processamento da informação é dividido em módulos ou processos distintos. 
@@ -36,7 +36,7 @@ Papéis:
   Funcionalidades como a troca de e-mail, acesso à internet ou acesso a um banco de dados, são construídos com base no modelo cliente-servidor. 
   Por exemplo, um navegador web é um programa cliente, em execução no computador do usuário, que acede às informações armazenadas num servidor web na internet.
  
- SISTEMA OPERACIONAL PARA SERVIDORES
+ 2. SISTEMA OPERACIONAL PARA SERVIDORES
  
   CentOS
   Debian
@@ -53,7 +53,7 @@ Papéis:
   * O Linux não ser apenas um sistema operacional.
       Ele é um kernel (parte mais importante de um sistema operacional), ou seja, ele possui seu código-fonte aberto (disponível para melhorias).
  
- PRINCIPAIS SERVIÇOS
+ 3. PRINCIPAIS SERVIÇOS
  
   Serviço de E-mail:
   É um serviço de hospedagem de e-mail no qual eles são armazenados. 
@@ -79,4 +79,22 @@ Papéis:
     software, realizando assim a sincronia das mensagens. Isso permite com que exista uma conexão para que alterações e
     novos e-mails sejam atualizados em tempo real.
     
+  Serviço de arquivo(protocolos):
+	SFTP: Permite que ninguém veja seus dados a não ser você.
+  SSH: Permite usuários configurarem sites e servidores pela internet de uma forma segura e simples.
+  
+  Serviço de segurança:
+	Firewalls: Filtram o acesso de dados e quem tem acesso a eles.
+  Proxy: Age como intermediário entre o usuário e a internet e repassa todas as suas requisições ao site sente acessado, assim o IP que registrado nas paginas é o do proxy, não o seu.
+
+  Serviço de banco de dados:
+  São os dados que tratam do mesmo assunto e precisam ser salvos no mesmo lugar, um servidor tem diversos bancos de dados, por isso é necessário um serviço de gerencia de banco de dados.
+  
+  Serviço de HTTP ou HTTPS:
+  O http permite que os usuários que inserirem o url de um site possam acessa-lo.
+
+
+  4. VIRTUALIZAÇÃO DE SERVIDORES
+
+  Virtualizar um servidor é pegar um servidor físico e dividi-lo em diversas maquinas virtuais, assim tendo uma maior segurança, pois cada máquina funciona independente uma da outra e pode rodar seu próprio sistema operacional. Você pode atribuir quanta memória, qual porcentagem de cpu e etc cada maquina utilizara.
     
